@@ -2,9 +2,8 @@
   "name": "rollup-plugin-null",
   "version": "1.0.2",
   "description": "在某些特定情况下，打包的时候不需要对引入的文件做任何处理。",
-  "main": "./dist/es/index.js",
-  "module": "./dist/cjs/index.js",
-  "type": "module",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/es/index.js",
   "exports": {
     "types": "./types/index.d.ts",
     "import": "./dist/es/index.js",
@@ -12,8 +11,8 @@
   },
   "types": "./types/index.d.ts",
   "scripts": {
-    "build:es": "cross-env ENV=es rollup -c rollup.config.js",
-    "build:cjs": "cross-env ENV=cjs rollup -c rollup.config.js",
+    "build:es": "cross-env ENV=es rollup -c rollup.config.mjs",
+    "build:cjs": "cross-env ENV=cjs rollup -c rollup.config.mjs",
     "build": "npm run build:es && npm run build:cjs && gulp"
   },
   "keywords": [
