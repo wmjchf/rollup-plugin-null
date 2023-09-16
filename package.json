@@ -10,6 +10,7 @@
     "import": "./dist/es/index.js",
     "default": "./dist/cjs/index.js"
   },
+  "types": "./types/index.d.ts",
   "scripts": {
     "build:es": "cross-env ENV=es rollup -c rollup.config.js",
     "build:cjs": "cross-env ENV=cjs rollup -c rollup.config.js",
