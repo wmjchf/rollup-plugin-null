@@ -2,8 +2,8 @@
   "name": "rollup-plugin-null",
   "version": "1.0.1",
   "description": "在某些特定情况下，打包的时候不需要对引入的文件做任何处理。",
-  "main": "./dist/cjs/index.js",
-  "module": "./dist/es/index.js",
+  "main": "./dist/es/index.js",
+  "module": "./dist/cjs/index.js",
   "type": "module",
   "exports": {
     "types": "./types/index.d.ts",
