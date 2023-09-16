@@ -11,7 +11,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "no-build": "file:..",
-    "rollup": "^3.29.1"
+    "rollup": "^3.29.1",
+    "rollup-plugin-null": "file:.."
   }
 }

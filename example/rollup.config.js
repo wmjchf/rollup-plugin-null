@@ -1,5 +1,5 @@
 import { defineConfig } from "rollup";
-import { noBuild } from "no-build";
+import nullImport from "rollup-plugin-null";
 
 export default defineConfig({
   input: "./src/index.js",
@@ -8,7 +8,7 @@ export default defineConfig({
     file: "./dist/index.js",
   },
   plugins: [
-    noBuild({
+    nullImport({
       ext: [".less", ".css"],
     }),
   ],
