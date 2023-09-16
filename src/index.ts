@@ -2,7 +2,7 @@ import { Plugin } from "rollup";
 interface Option {
   ext: string[];
 }
-export const noBuild: (option: Option) => Plugin = (option) => {
+const noBuild: (option: Option) => Plugin = (option) => {
   return {
     name: "null",
     resolveId(source, importer) {
@@ -14,3 +14,5 @@ export const noBuild: (option: Option) => Plugin = (option) => {
     },
   };
 };
+
+export default noBuild;
